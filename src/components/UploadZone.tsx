@@ -13,7 +13,7 @@ interface StatusState {
   filename: string | null
 }
 
-export default function UploadZone() {
+export default function UploadZone({ compact = false }: { compact?: boolean }) {
   const [state, setState] = useState<StatusState>({
     status: 'idle', uploadId: null, handsParsed: 0, error: null, filename: null,
   })
@@ -143,6 +143,28 @@ export default function UploadZone() {
           )}
         </div>
       </div>
+    )
+  }
+
+  // ── Idle: compact button ─────────────────────────────────────────────────────
+  if (compact) {
+    return (
+      <>
+        <button
+          type="button"
+          onClick={() => fileInputRef.current?.click()}
+          className="w-full rounded-2xl border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 px-5 py-3 text-sm font-medium text-zinc-300 transition min-h-[44px]"
+        >
+          Upload more hands
+        </button>
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept=".txt"
+          className="hidden"
+          onChange={e => handleFiles(e.target.files)}
+        />
+      </>
     )
   }
 

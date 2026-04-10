@@ -1,17 +1,18 @@
-import Link from 'next/link'
-import { logout } from '@/app/actions/auth'
 import { createClient } from '@/lib/supabase/server'
+import { redirect } from 'next/navigation'
+import Link from 'next/link'
 import UploadZone from '@/components/UploadZone'
 
-export default async function HomePage() {
+export default async function UploadPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
+  if (!user) redirect('/login')
 
   // Recent uploads
   const { data: uploads } = await supabase
     .from('uploads')
     .select('id, filename, status, hands_parsed, error_message, created_at')
-    .eq('user_id', user!.id)
+    .eq('user_id', user.id)
     .order('created_at', { ascending: false })
     .limit(5)
 
@@ -20,18 +21,11 @@ export default async function HomePage() {
       <div className="max-w-sm mx-auto">
 
         {/* Header */}
-        <div className="flex items-center justify-between mb-8">
-          <h1 className="text-xl font-bold text-white">PokerStats</h1>
-          <div className="flex items-center gap-3">
-            <Link href="/profile" className="text-zinc-400 hover:text-white text-sm transition">
-              Account
-            </Link>
-            <form action={logout}>
-              <button type="submit" className="text-zinc-400 hover:text-white text-sm transition">
-                Sign out
-              </button>
-            </form>
-          </div>
+        <div className="flex items-center gap-3 mb-8">
+          <Link href="/" className="text-zinc-400 hover:text-white transition">
+            ←
+          </Link>
+          <h1 className="text-xl font-bold text-white">Upload hands</h1>
         </div>
 
         {/* Upload zone */}

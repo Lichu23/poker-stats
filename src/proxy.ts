@@ -31,7 +31,7 @@ export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
   // Protected routes — redirect to login if not authenticated
-  const protectedPaths = ['/', '/preflop', '/postflop', '/luck', '/sessions', '/hands', '/upload']
+  const protectedPaths = ['/', '/preflop', '/postflop', '/luck', '/sessions', '/hands', '/upload', '/profile']
   const isProtected = protectedPaths.some(p => pathname === p || pathname.startsWith(p + '/'))
 
   if (isProtected && !user) {

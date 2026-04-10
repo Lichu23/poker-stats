@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PokerStats — Know Your Leaks
 
-## Getting Started
+Upload your PokerStars hand histories and get personalized statistics that show exactly where you're winning and losing money.
 
-First, run the development server:
+## What it does
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Most poker players have no idea what their actual numbers look like. PokerStats fixes that. Upload your hand history file and instantly see:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **VPIP & PFR** — how loose or tight you play before the flop
+- **3-Bet %** — how often you re-raise preflop
+- **Aggression Factor** — how aggressive you are post-flop
+- **C-Bet %** — how often you follow up your preflop raises on the flop
+- **WTSD & W$SD** — how often you go to showdown and how often you win there
+- **BB/100** — your win rate per 100 hands (the standard measure of how good you are)
+- **Net result** — total profit or loss in big blinds across all your hands
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+All stats are private — only you can see your own data.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How to use it
 
-## Learn More
+1. **Create an account** at the app
+2. **Export your hands** from PokerStars: open the client → More → Hand History → Export → save the `.txt` file
+3. **Upload the file** on the home page — drag and drop or tap to browse
+4. Your stats appear automatically once the file is processed
 
-To learn more about Next.js, take a look at the following resources:
+## Supported formats
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- PokerStars cash game hand histories (`.txt`)
+- Hold'em No Limit, Pot Limit, Fixed Limit
+- Any stakes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Privacy
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Your hand history data is stored privately and only accessible to you. Opponent usernames are not stored.

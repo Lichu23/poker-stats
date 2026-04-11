@@ -1,0 +1,348 @@
+PokerStars Hand #221748301660: Hold'em No Limit ($0.05/$0.10 USD) - 2024/03/16 18:05:11 ET
+Table 'Alpheratz II' 6-max Seat #2 is the button
+Seat 1: villain_a ($10.00 in chips)
+Seat 2: villain_b ($9.50 in chips)
+Seat 3: Hero ($12.00 in chips)
+Seat 4: villain_c ($8.75 in chips)
+Seat 5: villain_d ($11.20 in chips)
+Seat 6: villain_e ($7.30 in chips)
+Hero: posts small blind $0.05
+villain_c: posts big blind $0.10
+*** HOLE CARDS ***
+Dealt to Hero [As Ks]
+villain_d: folds
+villain_e: folds
+villain_a: folds
+villain_b: folds
+Hero: raises $0.20 to $0.25
+villain_c: folds
+Hero collected $0.20 from pot
+*** SUMMARY ***
+Total pot $0.20 | Rake $0
+Seat 1: villain_a folded before Flop (didn't bet)
+Seat 2: villain_b (button) folded before Flop (didn't bet)
+Seat 3: Hero (small blind) collected ($0.20)
+Seat 4: villain_c (big blind) folded before Flop
+Seat 5: villain_d folded before Flop (didn't bet)
+Seat 6: villain_e folded before Flop (didn't bet)
+
+PokerStars Hand #221748301661: Hold'em No Limit ($0.05/$0.10 USD) - 2024/03/16 18:10:44 ET
+Table 'Alpheratz II' 6-max Seat #3 is the button
+Seat 1: villain_a ($10.00 in chips)
+Seat 2: villain_b ($9.50 in chips)
+Seat 3: villain_c ($8.75 in chips)
+Seat 4: villain_d ($11.20 in chips)
+Seat 5: villain_e ($7.30 in chips)
+Seat 6: Hero ($12.10 in chips)
+villain_d: posts small blind $0.05
+villain_e: posts big blind $0.10
+*** HOLE CARDS ***
+Dealt to Hero [Kh Qh]
+Hero: raises $0.20 to $0.30
+villain_a: folds
+villain_b: folds
+villain_c: folds
+villain_d: folds
+villain_e: calls $0.20
+*** FLOP *** [Kd 7s 2c]
+villain_e: checks
+Hero: bets $0.30
+villain_e: calls $0.30
+*** TURN *** [Kd 7s 2c] [3h]
+villain_e: checks
+Hero: bets $0.75
+villain_e: folds
+Hero collected $1.35 from pot
+*** SUMMARY ***
+Total pot $1.35 | Rake $0.07
+Board [Kd 7s 2c 3h]
+Seat 1: villain_a folded before Flop (didn't bet)
+Seat 2: villain_b folded before Flop (didn't bet)
+Seat 3: villain_c (button) folded before Flop (didn't bet)
+Seat 4: villain_d (small blind) folded before Flop
+Seat 5: villain_e (big blind) folded on the Turn
+Seat 6: Hero collected ($1.35)
+
+PokerStars Hand #221748301662: Hold'em No Limit ($0.05/$0.10 USD) - 2024/03/16 18:16:22 ET
+Table 'Alpheratz II' 6-max Seat #4 is the button
+Seat 1: villain_a ($10.00 in chips)
+Seat 2: villain_b ($9.50 in chips)
+Seat 3: villain_c ($8.75 in chips)
+Seat 4: villain_d ($11.20 in chips)
+Seat 5: Hero ($12.55 in chips)
+Seat 6: villain_e ($7.30 in chips)
+Hero: posts small blind $0.05
+villain_e: posts big blind $0.10
+*** HOLE CARDS ***
+Dealt to Hero [9h 9d]
+villain_a: folds
+villain_b: raises $0.20 to $0.30
+villain_c: folds
+villain_d: folds
+Hero: raises $0.75 to $0.80
+villain_e: folds
+villain_b: calls $0.50
+*** FLOP *** [9c 4h 2s]
+Hero: bets $0.80
+villain_b: raises $2.40 to $3.20
+Hero: raises $8.75 to $11.95 and is all-in
+villain_b: folds
+Hero collected $7.60 from pot
+*** SUMMARY ***
+Total pot $7.60 | Rake $0.38
+Board [9c 4h 2s]
+Seat 1: villain_a folded before Flop (didn't bet)
+Seat 2: villain_b folded on the Flop
+Seat 3: villain_c folded before Flop (didn't bet)
+Seat 4: villain_d (button) folded before Flop (didn't bet)
+Seat 5: Hero (small blind) collected ($7.60)
+Seat 6: villain_e (big blind) folded before Flop
+
+PokerStars Hand #221748301663: Hold'em No Limit ($0.05/$0.10 USD) - 2024/03/16 18:22:05 ET
+Table 'Alpheratz II' 6-max Seat #5 is the button
+Seat 1: villain_a ($10.00 in chips)
+Seat 2: villain_b ($8.00 in chips)
+Seat 3: villain_c ($8.75 in chips)
+Seat 4: villain_d ($11.20 in chips)
+Seat 5: villain_e ($7.30 in chips)
+Seat 6: Hero ($19.15 in chips)
+villain_e: posts small blind $0.05
+Hero: posts big blind $0.10
+*** HOLE CARDS ***
+Dealt to Hero [Qc 9s]
+villain_a: folds
+villain_b: folds
+villain_c: raises $0.20 to $0.30
+villain_d: folds
+villain_e: folds
+Hero: calls $0.20
+*** FLOP *** [Jh Td 4c]
+Hero: checks
+villain_c: bets $0.30
+Hero: raises $0.90 to $1.20
+villain_c: folds
+Hero collected $1.90 from pot
+*** SUMMARY ***
+Total pot $1.90 | Rake $0.10
+Board [Jh Td 4c]
+Seat 1: villain_a folded before Flop (didn't bet)
+Seat 2: villain_b folded before Flop (didn't bet)
+Seat 3: villain_c folded on the Flop
+Seat 4: villain_d folded before Flop (didn't bet)
+Seat 5: villain_e (button) folded before Flop (didn't bet)
+Seat 6: Hero (big blind) collected ($1.90)
+
+PokerStars Hand #221748301664: Hold'em No Limit ($0.05/$0.10 USD) - 2024/03/16 18:28:50 ET
+Table 'Alpheratz II' 6-max Seat #6 is the button
+Seat 1: villain_a ($10.00 in chips)
+Seat 2: villain_b ($8.00 in chips)
+Seat 3: villain_c ($8.25 in chips)
+Seat 4: villain_d ($11.20 in chips)
+Seat 5: villain_e ($7.30 in chips)
+Seat 6: Hero ($20.95 in chips)
+villain_a: posts small blind $0.05
+villain_b: posts big blind $0.10
+*** HOLE CARDS ***
+Dealt to Hero [Ac Jc]
+villain_c: folds
+villain_d: folds
+villain_e: folds
+Hero: raises $0.20 to $0.30
+villain_a: folds
+villain_b: calls $0.20
+*** FLOP *** [Ad 8c 3s]
+villain_b: checks
+Hero: bets $0.30
+villain_b: calls $0.30
+*** TURN *** [Ad 8c 3s] [2d]
+villain_b: checks
+Hero: bets $0.70
+villain_b: raises $2.10 to $2.80
+Hero: folds
+villain_b collected $2.90 from pot
+*** SUMMARY ***
+Total pot $2.90 | Rake $0.15
+Board [Ad 8c 3s 2d]
+Seat 1: villain_a (small blind) folded before Flop
+Seat 2: villain_b (big blind) collected ($2.90)
+Seat 3: villain_c folded before Flop (didn't bet)
+Seat 4: villain_d folded before Flop (didn't bet)
+Seat 5: villain_e folded before Flop (didn't bet)
+Seat 6: Hero (button) folded on the Turn
+
+PokerStars Hand #221748301665: Hold'em No Limit ($0.05/$0.10 USD) - 2024/03/16 18:35:17 ET
+Table 'Alpheratz II' 6-max Seat #1 is the button
+Seat 1: Hero ($19.65 in chips)
+Seat 2: villain_a ($10.00 in chips)
+Seat 3: villain_b ($9.40 in chips)
+Seat 4: villain_c ($8.25 in chips)
+Seat 5: villain_d ($11.20 in chips)
+Seat 6: villain_e ($7.30 in chips)
+villain_a: posts small blind $0.05
+villain_b: posts big blind $0.10
+*** HOLE CARDS ***
+Dealt to Hero [Th 8h]
+villain_c: folds
+villain_d: folds
+villain_e: folds
+Hero: raises $0.20 to $0.30
+villain_a: folds
+villain_b: calls $0.20
+*** FLOP *** [7h 6s 2h]
+villain_b: checks
+Hero: bets $0.35
+villain_b: calls $0.35
+*** TURN *** [7h 6s 2h] [9d]
+villain_b: checks
+Hero: bets $0.85
+villain_b: raises $2.55 to $3.40
+Hero: calls $2.55
+*** RIVER *** [7h 6s 2h 9d] [5c]
+villain_b: bets $5.35
+Hero: calls $5.35
+*** SHOW DOWN ***
+Hero: shows [Th 8h] (a straight, Six to Ten)
+villain_b: shows [8d 8c] (a pair of Eights)
+Hero collected $18.90 from pot
+*** SUMMARY ***
+Total pot $18.90 | Rake $0.95
+Board [7h 6s 2h 9d 5c]
+Seat 1: Hero (button) showed [Th 8h] and won ($18.90) with a straight, Six to Ten
+Seat 2: villain_a (small blind) folded before Flop
+Seat 3: villain_b (big blind) showed [8d 8c] and lost with a pair of Eights
+Seat 4: villain_c folded before Flop (didn't bet)
+Seat 5: villain_d folded before Flop (didn't bet)
+Seat 6: villain_e folded before Flop (didn't bet)
+
+PokerStars Hand #221748301666: Hold'em No Limit ($0.05/$0.10 USD) - 2024/03/16 18:41:38 ET
+Table 'Alpheratz II' 6-max Seat #2 is the button
+Seat 1: Hero ($28.20 in chips)
+Seat 2: villain_a ($10.00 in chips)
+Seat 3: villain_b ($0 in chips)
+Seat 4: villain_c ($8.25 in chips)
+Seat 5: villain_d ($11.20 in chips)
+Seat 6: villain_e ($7.30 in chips)
+villain_c: posts small blind $0.05
+villain_d: posts big blind $0.10
+*** HOLE CARDS ***
+Dealt to Hero [4s 5s]
+villain_e: folds
+Hero: folds
+villain_a: folds
+villain_b: folds
+villain_c: raises $0.20 to $0.25
+villain_d: folds
+villain_c collected $0.20 from pot
+*** SUMMARY ***
+Total pot $0.20 | Rake $0
+Seat 1: Hero folded before Flop (didn't bet)
+Seat 2: villain_a (button) folded before Flop (didn't bet)
+Seat 3: villain_b folded before Flop (didn't bet)
+Seat 4: villain_c (small blind) collected ($0.20)
+Seat 5: villain_d (big blind) folded before Flop
+Seat 6: villain_e folded before Flop (didn't bet)
+
+PokerStars Hand #221748301667: Hold'em No Limit ($0.05/$0.10 USD) - 2024/03/16 18:47:02 ET
+Table 'Alpheratz II' 6-max Seat #3 is the button
+Seat 1: Hero ($28.20 in chips)
+Seat 2: villain_a ($10.00 in chips)
+Seat 3: villain_b ($8.90 in chips)
+Seat 4: villain_c ($8.15 in chips)
+Seat 5: villain_d ($11.10 in chips)
+Seat 6: villain_e ($7.30 in chips)
+villain_d: posts small blind $0.05
+villain_e: posts big blind $0.10
+*** HOLE CARDS ***
+Dealt to Hero [Ah Ad]
+villain_a: folds
+villain_b: folds
+Hero: raises $0.20 to $0.30
+villain_c: folds
+villain_d: raises $0.70 to $0.75
+villain_e: folds
+Hero: raises $2.25 to $3.00
+villain_d: calls $2.25
+*** FLOP *** [As 6d 2h]
+villain_d: checks
+Hero: bets $2.00
+villain_d: folds
+Hero collected $6.25 from pot
+*** SUMMARY ***
+Total pot $6.25 | Rake $0.31
+Board [As 6d 2h]
+Seat 1: Hero collected ($6.25)
+Seat 2: villain_a folded before Flop (didn't bet)
+Seat 3: villain_b (button) folded before Flop (didn't bet)
+Seat 4: villain_c folded before Flop (didn't bet)
+Seat 5: villain_d (small blind) folded on the Flop
+Seat 6: villain_e (big blind) folded before Flop
+
+PokerStars Hand #221748301668: Hold'em No Limit ($0.05/$0.10 USD) - 2024/03/16 18:53:44 ET
+Table 'Alpheratz II' 6-max Seat #4 is the button
+Seat 1: Hero ($31.45 in chips)
+Seat 2: villain_a ($10.00 in chips)
+Seat 3: villain_b ($8.90 in chips)
+Seat 4: villain_c ($8.15 in chips)
+Seat 5: villain_d ($8.00 in chips)
+Seat 6: villain_e ($7.30 in chips)
+Hero: posts small blind $0.05
+villain_a: posts big blind $0.10
+*** HOLE CARDS ***
+Dealt to Hero [Jd Js]
+villain_b: folds
+villain_c: folds
+villain_d: folds
+villain_e: folds
+Hero: raises $0.20 to $0.25
+villain_a: raises $0.65 to $0.75
+Hero: calls $0.50
+*** FLOP *** [Jh 5c 3d]
+Hero: checks
+villain_a: bets $0.60
+Hero: raises $1.80 to $2.40
+villain_a: calls $1.80
+*** TURN *** [Jh 5c 3d] [8s]
+Hero: bets $3.50
+villain_a: raises $6.75 to $10.25 and is all-in
+Hero: calls $6.75
+*** RIVER *** [Jh 5c 3d 8s] [2c]
+*** SHOW DOWN ***
+Hero: shows [Jd Js] (three of a kind, Jacks)
+villain_a: shows [Ah Ac] (a pair of Aces)
+Hero collected $20.95 from pot
+*** SUMMARY ***
+Total pot $20.95 | Rake $1.05
+Board [Jh 5c 3d 8s 2c]
+Seat 1: Hero (small blind) showed [Jd Js] and won ($20.95) with three of a kind, Jacks
+Seat 2: villain_a (big blind) showed [Ah Ac] and lost with a pair of Aces
+Seat 3: villain_b folded before Flop (didn't bet)
+Seat 4: villain_c (button) folded before Flop (didn't bet)
+Seat 5: villain_d folded before Flop (didn't bet)
+Seat 6: villain_e folded before Flop (didn't bet)
+
+PokerStars Hand #221748301669: Hold'em No Limit ($0.05/$0.10 USD) - 2024/03/16 19:00:15 ET
+Table 'Alpheratz II' 6-max Seat #5 is the button
+Seat 1: Hero ($42.35 in chips)
+Seat 2: villain_a ($0 in chips)
+Seat 3: villain_b ($8.90 in chips)
+Seat 4: villain_c ($8.15 in chips)
+Seat 5: villain_d ($8.00 in chips)
+Seat 6: villain_e ($7.30 in chips)
+villain_e: posts small blind $0.05
+Hero: posts big blind $0.10
+*** HOLE CARDS ***
+Dealt to Hero [2c 7d]
+villain_b: folds
+villain_c: raises $0.20 to $0.30
+villain_d: folds
+villain_e: folds
+Hero: folds
+villain_c collected $0.20 from pot
+*** SUMMARY ***
+Total pot $0.20 | Rake $0
+Seat 1: Hero (big blind) folded before Flop
+Seat 2: villain_a folded before Flop (didn't bet)
+Seat 3: villain_b folded before Flop (didn't bet)
+Seat 4: villain_c folded before Flop (didn't bet)
+Seat 5: villain_d (button) folded before Flop (didn't bet)
+Seat 6: villain_e (small blind) folded before Flop

@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useState, useCallback, useTransition, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import { uploadHandHistory, getUploadStatus } from '@/app/actions/upload'
 
 type UploadStatus = 'idle' | 'uploading' | 'processing' | 'completed' | 'failed'
@@ -14,6 +15,7 @@ interface StatusState {
 }
 
 export default function UploadZone({ compact = false }: { compact?: boolean }) {
+  const router = useRouter()
   const [state, setState] = useState<StatusState>({
     status: 'idle', uploadId: null, handsParsed: 0, error: null, filename: null,
   })
@@ -21,6 +23,13 @@ export default function UploadZone({ compact = false }: { compact?: boolean }) {
   const [isPending, startTransition] = useTransition()
   const fileInputRef = useRef<HTMLInputElement>(null)
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null)
+
+  // Refresh the server component after upload completes so dashboard data loads
+  useEffect(() => {
+    if (state.status !== 'completed') return
+    const t = setTimeout(() => router.refresh(), 1500)
+    return () => clearTimeout(t)
+  }, [state.status, router])
 
   // Poll for status while processing
   useEffect(() => {

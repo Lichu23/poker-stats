@@ -36,8 +36,9 @@ export default async function HandsPage() {
           <div className="space-y-2">
             {hands?.map(hand => {
               const result = hand.result_bb as number
-              const isWin = result > 0
-              const isLoss = result < 0
+              const displayed = result.toFixed(1)
+              const isWin = displayed !== '0.0' && result > 0
+              const isLoss = displayed !== '0.0' && result < 0
 
               return (
                 <div
@@ -69,7 +70,7 @@ export default async function HandsPage() {
                     <p className={`text-sm font-semibold ${
                       isWin ? 'text-green-400' : isLoss ? 'text-red-400' : 'text-zinc-400'
                     }`}>
-                      {isWin ? '+' : ''}{result.toFixed(1)} BB
+                      {isWin ? '+' : ''}{displayed} BB
                     </p>
                   </div>
                 </div>

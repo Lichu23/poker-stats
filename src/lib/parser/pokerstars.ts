@@ -30,10 +30,13 @@ function getPosition(heroSeat: number, buttonSeat: number, allSeats: number[]): 
 }
 
 function extractSummaryName(summaryLine: string): string {
-  // "Seat N: PlayerName (position label) action"
-  // Extract name before the first " ("
-  const m = summaryLine.match(/^Seat \d+:\s+(.+?)\s+\(/)
-  return m ? m[1] : ''
+  // With position label: "Seat N: Name (small blind|big blind|button) ..."
+  const m1 = summaryLine.match(/^Seat \d+:\s+(.+?)\s+\((?:small blind|big blind|button)\)/)
+  if (m1) return m1[1]
+  // Without position label: "Seat N: Name showed|collected|folded|mucked ..."
+  const m2 = summaryLine.match(/^Seat \d+:\s+(.+?)\s+(?:showed|collected|folded|mucked)/)
+  if (m2) return m2[1]
+  return ''
 }
 
 function parseHand(block: string): ParsedHand | null {
@@ -152,10 +155,14 @@ function parseHand(block: string): ParsedHand | null {
         }
       }
 
-      // Won at showdown
+      // Won at showdown — also capture the collected amount from "won ($X)"
       if (line.includes('showed') && line.includes('and won')) {
         const name = extractSummaryName(line)
-        if (name === heroName) wonAtShowdown = true
+        if (name === heroName) {
+          wonAtShowdown = true
+          const amtM = line.match(/won \(\$?([\d.]+)\)/)
+          if (amtM) heroCollected += parseFloat(amtM[1])
+        }
       }
       continue
     }

@@ -1,5 +1,3 @@
-import Link from 'next/link'
-import { logout } from '@/app/actions/auth'
 import { createClient } from '@/lib/supabase/server'
 import UploadZone from '@/components/UploadZone'
 import StatCard from '@/components/StatCard'
@@ -101,6 +99,8 @@ export default async function SummaryPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
+  const isDemo = user?.email === process.env.DEMO_USER_EMAIL
+
   const { data: stats } = await supabase
     .from('user_stats')
     .select('*')
@@ -133,23 +133,8 @@ export default async function SummaryPage() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-950 px-4 pt-8">
+    <div className="px-4 pb-4">
       <div className="max-w-sm mx-auto space-y-4">
-
-        {/* Header */}
-        <div className="flex items-center justify-between mb-2">
-          <h1 className="text-xl font-bold text-white">PokerStats</h1>
-          <div className="flex items-center gap-3">
-            <Link href="/profile" className="text-zinc-400 hover:text-white text-sm transition">
-              Account
-            </Link>
-            <form action={logout}>
-              <button type="submit" className="text-zinc-400 hover:text-white text-sm transition">
-                Sign out
-              </button>
-            </form>
-          </div>
-        </div>
 
         {!hasHands ? (
           /* ── Empty state / onboarding ── */
@@ -181,7 +166,7 @@ export default async function SummaryPage() {
                     : 'bg-red-500/10 border-red-500/30'
                 }`}>
                   <p className="text-xs text-zinc-400 uppercase tracking-wide mb-1">Overall</p>
-                  <p className={`text-3xl font-bold ${isWinning ? 'text-green-400' : 'text-red-400'}`}>
+                  <p className={`text-2xl font-bold ${isWinning ? 'text-green-400' : 'text-red-400'}`}>
                     {isWinning ? 'Winning' : 'Losing'}
                   </p>
                   <p className={`text-sm mt-1 ${isWinning ? 'text-green-300/70' : 'text-red-300/70'}`}>
@@ -242,9 +227,11 @@ export default async function SummaryPage() {
             </div>
 
             {/* Upload more */}
-            <div className="pb-4">
-              <UploadZone compact />
-            </div>
+            {!isDemo && (
+              <div className="pb-4">
+                <UploadZone compact />
+              </div>
+            )}
           </>
         )}
       </div>

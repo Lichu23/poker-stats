@@ -89,7 +89,7 @@ export default async function PreflopPage() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-950 px-4 pt-8">
+    <div className="px-4">
       <div className="max-w-sm mx-auto space-y-4">
 
         <div className="mb-2">

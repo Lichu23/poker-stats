@@ -106,7 +106,7 @@ export default function UploadZone({ compact = false }: { compact?: boolean }) {
         </div>
         <button
           onClick={reset}
-          className="rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 px-5 py-3 text-sm font-medium text-white transition"
+          className="rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 px-5 py-3 text-sm font-medium text-white transition cursor-pointer"
         >
           Upload another file
         </button>
@@ -127,7 +127,7 @@ export default function UploadZone({ compact = false }: { compact?: boolean }) {
         </div>
         <button
           onClick={reset}
-          className="rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 px-5 py-3 text-sm font-medium text-white transition"
+          className="rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 px-5 py-3 text-sm font-medium text-white transition cursor-pointer"
         >
           Try again
         </button>
@@ -162,7 +162,7 @@ export default function UploadZone({ compact = false }: { compact?: boolean }) {
         <button
           type="button"
           onClick={() => fileInputRef.current?.click()}
-          className="w-full rounded-2xl border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 px-5 py-3 text-sm font-medium text-zinc-300 transition min-h-[44px]"
+          className="w-full rounded-2xl border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 px-5 py-3 text-sm font-medium text-zinc-300 transition min-h-[44px] cursor-pointer"
         >
           Upload more hands
         </button>
@@ -187,7 +187,7 @@ export default function UploadZone({ compact = false }: { compact?: boolean }) {
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
         className={[
-          'w-full rounded-2xl border-2 border-dashed px-6 py-12 flex flex-col items-center gap-3 transition',
+          'w-full rounded-2xl border-2 border-dashed px-6 py-12 flex flex-col items-center gap-3 transition cursor-pointer',
           isDragging
             ? 'border-green-500 bg-green-500/10'
             : 'border-zinc-700 bg-zinc-900 hover:border-zinc-500',

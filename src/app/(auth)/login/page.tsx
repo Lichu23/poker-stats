@@ -51,7 +51,7 @@ export default async function LoginPage({ searchParams }: Props) {
 
         <button
           type="submit"
-          className="mt-2 w-full rounded-lg bg-green-600 hover:bg-green-500 active:bg-green-700 px-4 py-3 text-sm font-semibold text-white transition focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-zinc-900"
+          className="mt-2 w-full rounded-lg bg-green-600 hover:bg-green-500 active:bg-green-700 px-4 py-3 text-sm font-semibold text-white transition focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-zinc-900 cursor-pointer"
         >
           Sign in
         </button>
@@ -75,7 +75,7 @@ export default async function LoginPage({ searchParams }: Props) {
           <form action={loginAsDemo} className="mt-4">
             <button
               type="submit"
-              className="w-full rounded-lg border border-zinc-700 hover:border-zinc-500 bg-zinc-800/50 hover:bg-zinc-800 px-4 py-3 text-sm font-medium text-zinc-200 transition focus:outline-none focus:ring-2 focus:ring-zinc-500"
+              className="w-full rounded-lg border border-zinc-700 hover:border-zinc-500 bg-zinc-800/50 hover:bg-zinc-800 px-4 py-3 text-sm font-medium text-zinc-200 transition focus:outline-none focus:ring-2 focus:ring-zinc-500 cursor-pointer"
             >
               Try Demo — no sign up needed
             </button>

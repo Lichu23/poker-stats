@@ -15,7 +15,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                 Account
               </Link>
               <form action={logout} className="flex items-center">
-                <button type="submit" className="text-zinc-400 hover:text-white text-sm transition">
+                <button type="submit" className="text-zinc-400 hover:text-white text-sm transition cursor-pointer">
                   Sign out
                 </button>
               </form>

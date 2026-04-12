@@ -90,7 +90,7 @@ export default async function ProfilePage({ searchParams }: Props) {
                 </div>
                 <button
                   type="submit"
-                  className="w-full rounded-lg bg-green-600 hover:bg-green-500 active:bg-green-700 px-4 py-3 text-sm font-semibold text-white transition"
+                  className="w-full rounded-lg bg-green-600 hover:bg-green-500 active:bg-green-700 px-4 py-3 text-sm font-semibold text-white transition cursor-pointer"
                 >
                   Update password
                 </button>
@@ -106,7 +106,7 @@ export default async function ProfilePage({ searchParams }: Props) {
               <form action={deleteAccount}>
                 <button
                   type="submit"
-                  className="w-full rounded-lg bg-red-600/20 hover:bg-red-600/30 active:bg-red-600/40 border border-red-600/40 px-4 py-3 text-sm font-semibold text-red-400 transition"
+                  className="w-full rounded-lg bg-red-600/20 hover:bg-red-600/30 active:bg-red-600/40 border border-red-600/40 px-4 py-3 text-sm font-semibold text-red-400 transition cursor-pointer"
                 >
                   Delete my account
                 </button>

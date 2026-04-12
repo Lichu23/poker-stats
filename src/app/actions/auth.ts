@@ -49,3 +49,21 @@ export async function logout() {
   await supabase.auth.signOut()
   redirect('/login')
 }
+
+export async function loginAsDemo() {
+  const email    = process.env.DEMO_USER_EMAIL
+  const password = process.env.DEMO_USER_PASSWORD
+
+  if (!email || !password) {
+    redirect('/login?error=Demo+account+is+not+configured')
+  }
+
+  const supabase = await createClient()
+  const { error } = await supabase.auth.signInWithPassword({ email, password })
+
+  if (error) {
+    redirect(`/login?error=${encodeURIComponent(error.message)}`)
+  }
+
+  redirect('/')
+}

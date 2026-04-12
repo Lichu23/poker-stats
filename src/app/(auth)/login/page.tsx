@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { login } from '@/app/actions/auth'
+import { login, loginAsDemo } from '@/app/actions/auth'
 
 interface Props {
   searchParams: Promise<{ error?: string }>
@@ -63,6 +63,28 @@ export default async function LoginPage({ searchParams }: Props) {
           Create one
         </Link>
       </p>
+
+      {process.env.DEMO_USER_EMAIL && (
+        <>
+          <div className="mt-6 flex items-center gap-3">
+            <div className="flex-1 h-px bg-zinc-800" />
+            <span className="text-xs text-zinc-600">or</span>
+            <div className="flex-1 h-px bg-zinc-800" />
+          </div>
+
+          <form action={loginAsDemo} className="mt-4">
+            <button
+              type="submit"
+              className="w-full rounded-lg border border-zinc-700 hover:border-zinc-500 bg-zinc-800/50 hover:bg-zinc-800 px-4 py-3 text-sm font-medium text-zinc-200 transition focus:outline-none focus:ring-2 focus:ring-zinc-500"
+            >
+              Try Demo — no sign up needed
+            </button>
+            <p className="mt-2 text-center text-xs text-zinc-600">
+              Pre-loaded with example hand history data
+            </p>
+          </form>
+        </>
+      )}
     </div>
   )
 }

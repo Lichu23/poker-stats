@@ -103,6 +103,10 @@ export async function uploadHandHistory(formData: FormData): Promise<{ uploadId:
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return { error: 'Not authenticated' }
 
+  if (user.email === process.env.DEMO_USER_EMAIL) {
+    return { error: 'Uploads are disabled in demo mode' }
+  }
+
   const file = formData.get('file') as File | null
   if (!file || file.size === 0) return { error: 'No file selected' }
 

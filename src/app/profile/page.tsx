@@ -13,6 +13,7 @@ export default async function ProfilePage({ searchParams }: Props) {
 
   if (!user) redirect('/login')
 
+  const isDemo = user.email === process.env.DEMO_USER_EMAIL
   const { error, success } = await searchParams
 
   return (
@@ -45,64 +46,74 @@ export default async function ProfilePage({ searchParams }: Props) {
           </div>
         )}
 
-        {/* Change password */}
-        <div className="bg-zinc-900 rounded-2xl p-5 border border-zinc-800 mb-4">
-          <h2 className="text-base font-semibold text-white mb-4">Change password</h2>
-          <form action={changePassword} className="flex flex-col gap-3">
-            <div>
-              <label htmlFor="password" className="block text-sm font-medium text-zinc-300 mb-1.5">
-                New password
-              </label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                required
-                minLength={8}
-                autoComplete="new-password"
-                placeholder="Min. 8 characters"
-                className="w-full rounded-lg bg-zinc-800 border border-zinc-700 px-3.5 py-3 text-sm text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
-              />
+        {isDemo ? (
+          <div className="bg-zinc-900 rounded-2xl p-5 border border-zinc-700 text-center">
+            <p className="text-sm text-zinc-400">
+              This is a demo account. Sign up to save your own data.
+            </p>
+          </div>
+        ) : (
+          <>
+            {/* Change password */}
+            <div className="bg-zinc-900 rounded-2xl p-5 border border-zinc-800 mb-4">
+              <h2 className="text-base font-semibold text-white mb-4">Change password</h2>
+              <form action={changePassword} className="flex flex-col gap-3">
+                <div>
+                  <label htmlFor="password" className="block text-sm font-medium text-zinc-300 mb-1.5">
+                    New password
+                  </label>
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    required
+                    minLength={8}
+                    autoComplete="new-password"
+                    placeholder="Min. 8 characters"
+                    className="w-full rounded-lg bg-zinc-800 border border-zinc-700 px-3.5 py-3 text-sm text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="confirm" className="block text-sm font-medium text-zinc-300 mb-1.5">
+                    Confirm new password
+                  </label>
+                  <input
+                    id="confirm"
+                    name="confirm"
+                    type="password"
+                    required
+                    minLength={8}
+                    autoComplete="new-password"
+                    placeholder="Repeat password"
+                    className="w-full rounded-lg bg-zinc-800 border border-zinc-700 px-3.5 py-3 text-sm text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full rounded-lg bg-green-600 hover:bg-green-500 active:bg-green-700 px-4 py-3 text-sm font-semibold text-white transition"
+                >
+                  Update password
+                </button>
+              </form>
             </div>
-            <div>
-              <label htmlFor="confirm" className="block text-sm font-medium text-zinc-300 mb-1.5">
-                Confirm new password
-              </label>
-              <input
-                id="confirm"
-                name="confirm"
-                type="password"
-                required
-                minLength={8}
-                autoComplete="new-password"
-                placeholder="Repeat password"
-                className="w-full rounded-lg bg-zinc-800 border border-zinc-700 px-3.5 py-3 text-sm text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full rounded-lg bg-green-600 hover:bg-green-500 active:bg-green-700 px-4 py-3 text-sm font-semibold text-white transition"
-            >
-              Update password
-            </button>
-          </form>
-        </div>
 
-        {/* Delete account */}
-        <div className="bg-zinc-900 rounded-2xl p-5 border border-red-900/40">
-          <h2 className="text-base font-semibold text-white mb-1">Delete account</h2>
-          <p className="text-sm text-zinc-400 mb-4">
-            This permanently deletes your account and all your data. This cannot be undone.
-          </p>
-          <form action={deleteAccount}>
-            <button
-              type="submit"
-              className="w-full rounded-lg bg-red-600/20 hover:bg-red-600/30 active:bg-red-600/40 border border-red-600/40 px-4 py-3 text-sm font-semibold text-red-400 transition"
-            >
-              Delete my account
-            </button>
-          </form>
-        </div>
+            {/* Delete account */}
+            <div className="bg-zinc-900 rounded-2xl p-5 border border-red-900/40">
+              <h2 className="text-base font-semibold text-white mb-1">Delete account</h2>
+              <p className="text-sm text-zinc-400 mb-4">
+                This permanently deletes your account and all your data. This cannot be undone.
+              </p>
+              <form action={deleteAccount}>
+                <button
+                  type="submit"
+                  className="w-full rounded-lg bg-red-600/20 hover:bg-red-600/30 active:bg-red-600/40 border border-red-600/40 px-4 py-3 text-sm font-semibold text-red-400 transition"
+                >
+                  Delete my account
+                </button>
+              </form>
+            </div>
+          </>
+        )}
 
       </div>
     </div>

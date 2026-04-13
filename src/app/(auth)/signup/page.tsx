@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { signup } from '@/app/actions/auth'
+import SubmitButton from '@/components/SubmitButton'
 
 interface Props {
   searchParams: Promise<{ error?: string; success?: string }>
@@ -68,12 +69,11 @@ export default async function SignupPage({ searchParams }: Props) {
           />
         </div>
 
-        <button
-          type="submit"
+        <SubmitButton
+          label="Create account"
+          pendingLabel="Creating account…"
           className="mt-2 w-full rounded-lg bg-green-600 hover:bg-green-500 active:bg-green-700 px-4 py-3 text-sm font-semibold text-white transition focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-zinc-900 cursor-pointer"
-        >
-          Create account
-        </button>
+        />
       </form>
 
       <p className="mt-6 text-center text-sm text-zinc-500">

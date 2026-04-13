@@ -99,6 +99,7 @@ async function parseAndInsert(uploadId: string, storagePath: string, userId: str
 
 // ── Server action: validate + upload + trigger background parse ───────────────
 export async function uploadHandHistory(formData: FormData): Promise<{ uploadId: string } | { error: string }> {
+  try {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return { error: 'Not authenticated' }
@@ -150,6 +151,11 @@ export async function uploadHandHistory(formData: FormData): Promise<{ uploadId:
   after(() => parseAndInsert(upload.id, storagePath, user.id))
 
   return { uploadId: upload.id }
+  } catch (err) {
+    const message = err instanceof Error ? err.message : 'Unexpected server error'
+    console.error('[uploadHandHistory] uncaught error:', message, err)
+    return { error: message }
+  }
 }
 
 // ── Server action: get upload status for polling ──────────────────────────────

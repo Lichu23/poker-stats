@@ -14,7 +14,7 @@ interface StatusState {
   filename: string | null
 }
 
-export default function UploadZone({ compact = false }: { compact?: boolean }) {
+export default function UploadZone({ compact = false, showHint = true }: { compact?: boolean; showHint?: boolean }) {
   const router = useRouter()
   const [state, setState] = useState<StatusState>({
     status: 'idle', uploadId: null, handsParsed: 0, error: null, filename: null,
@@ -207,11 +207,13 @@ export default function UploadZone({ compact = false }: { compact?: boolean }) {
         onChange={e => handleFiles(e.target.files)}
       />
 
-      <div className="rounded-xl bg-zinc-900 border border-zinc-800 px-4 py-3">
-        <p className="text-xs text-zinc-500 leading-relaxed">
-          Export from PokerStars: <span className="text-zinc-300">More → Hand History → Export</span>
-        </p>
-      </div>
+      {showHint && (
+        <div className="rounded-xl bg-zinc-900 border border-zinc-800 px-4 py-3">
+          <p className="text-xs text-zinc-500 leading-relaxed">
+            Export from PokerStars: <span className="text-zinc-300">More → Hand History → Export</span>
+          </p>
+        </div>
+      )}
     </div>
   )
 }

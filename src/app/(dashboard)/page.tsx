@@ -150,7 +150,7 @@ export default async function SummaryPage() {
                 <p>3. Upload below</p>
               </div>
             </div>
-            <UploadZone />
+            <UploadZone showHint={false} />
           </>
         ) : (
           /* ── Dashboard ── */
